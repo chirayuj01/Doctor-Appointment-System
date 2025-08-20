@@ -1,0 +1,11 @@
+{
+  "name": "prescripto-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix admin\" \"npm run dev --prefix clientside\" \"npm run start --prefix backend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

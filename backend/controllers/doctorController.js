@@ -34,17 +34,25 @@ const loginDoctor = async (req, res) => {
     const { email, password } = req.body;
     const doctor = await doctorModel.findOne({ email });
 
-    if (!doctor) {
-      return res.json({ success: false, message: "Invalid credentials" });
+    if (doctor) {
+      const isMatch = await bycrypt.compare(password, doctor.password);
+      if (isMatch) {
+        const token = jwt.sign({ id: doctor._id }, process.env.JWT_SECRET);
+        return res.json({ success: true, token });
+      } else {
+        return res.json({ success: false, message: "Invalid credentials" });
+      }
     }
 
-    const isMatch = await bycrypt.compare(password, doctor.password);
-
-    if (isMatch) {
-      const token = jwt.sign({ id: doctor._id }, process.env.JWT_SECRET);
-      res.json({ success: true, token });
+    // Fallback to .env doctor credentials
+    if (
+      email === process.env.DOCTOR_EMAIL &&
+      password === process.env.DOCTOR_PASSWORD
+    ) {
+      const token = jwt.sign(email + password, process.env.JWT_SECRET);
+      return res.json({ success: true, token });
     } else {
-      res.json({ success: false, message: "Invalid credentials" });
+      return res.json({ success: false, message: "Invalid credentials" });
     }
   } catch (error) {
     console.log(error);

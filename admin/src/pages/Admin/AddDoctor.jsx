@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 import axios from "axios";
 
 const AddDoctor = () => {
-  const [docImg, SetDocImg] = useState(false);
+  // const [docImg, SetDocImg] = useState(false);
   const [name, SetName] = useState("");
   const [email, SetEmail] = useState("");
   const [password, SetPassword] = useState("");
@@ -23,21 +23,15 @@ const AddDoctor = () => {
     event.preventDefault();
 
     try {
-      if (!docImg) {
-        return toast.error("Image Not Selected");
-      }
-
       const formData = new FormData();
-
-      formData.append("image", docImg);
-      formData.append("name", name);
-      formData.append("email", email);
-      formData.append("password", password);
-      formData.append("experience", experience);
-      formData.append("fees", Number(fees));
-      formData.append("about", about);
-      formData.append("speciality", speciality);
-      formData.append("degree", degree);
+  formData.append("name", name);
+  formData.append("email", email);
+  formData.append("password", password);
+  formData.append("experience", experience);
+  formData.append("fees", Number(fees));
+  formData.append("about", about);
+  formData.append("speciality", speciality);
+  formData.append("degree", degree);
       formData.append(
         "address",
         JSON.stringify({ line1: address1, line2: address2 })
@@ -78,6 +72,7 @@ const AddDoctor = () => {
     <form onSubmit={onSubmitHandler} className="m-5 w-full">
       <p className="mb-3 text-lg font-medium">Add Doctor</p>
       <div className="bg-white px-8 py-8 border rounded w-full max-w-4xl max-h-[80vh] overflow-y-scroll">
+        {/*
         <div className="flex items-center gap-4 mb-8 text-gray-500">
           <label htmlFor="doc-img">
             <img
@@ -96,6 +91,7 @@ const AddDoctor = () => {
             Upload doctor <br /> picture
           </p>
         </div>
+        */}
 
         <div className="flex flex-col lg:flex-row items-start gap-10 text-gray-600">
           <div className="w-full lg:flex-1 flex flex-col gap-4">

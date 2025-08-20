@@ -1,3 +1,28 @@
+# Medicap Appointment System
+
+## Live Links
+
+- **Frontend (Patient):** [https://medi-cap-appointment-system-1ruz.vercel.app/](https://medi-cap-appointment-system-1ruz.vercel.app/)
+- **Admin Panel:** [https://medi-cap-appointment-system-4t1f05rez.vercel.app/](https://medi-cap-appointment-system-4t1f05rez.vercel.app/)
+- **API (Backend):** [https://medicap-appointment-system.onrender.com/](https://medicap-appointment-system.onrender.com/)
+- **Repository:** [https://github.com/chirayuj01/MediCap-Appointment-System/tree/main](https://github.com/chirayuj01/MediCap-Appointment-System/tree/main)
+
+## Credentials
+
+- **Patient:** `patient@example.com` / `Passw0rd!`
+- **Admin:** `admin@example.com` / `Passw0rd!`
+
+## Run Locally
+
+See the steps in this README for local setup. All steps have been verified.
+
+## API Testing
+
+Postman/curl steps are included below for quick API testing.
+
+---
+
+_This project is fully deployed and ready for use. For any issues, see the repo or contact the maintainer._
 <div align="center">
   
 # PRESCRIPTO 👨‍⚕️🏥🤒
@@ -36,24 +61,4 @@ This full stack appointment booking system can be used by a doctor or a hospital
 </div>
 
 <br /><hr /><br />
-
-## Author :black_nib:
-- _[NIYIBIZI Elysée](https://linktr.ee/niyibizi_elysee)👨🏿‍💻 | [Github](https://github.com/elyse502) | [Linkedin](https://www.linkedin.com/in/niyibizi-elys%C3%A9e/) | [Twitter](https://twitter.com/Niyibizi_Elyse)._
-
-<!--I'm [Elysée NIYIBIZI](https://elyseeniyibizi.me/) 👋
-
-A **super passionate** Rwandan **software engineer** 🤗 And a true cheese 🧀 & chocolate 🍫 lover! 😋 You can reach me at _hi {[AT]} elyseeniyibizi [{D0T}] me_ -->
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/niyibizi-elys%C3%A9e/) [![@phenrysay](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/Niyibizi_Elyse) [![pH-7](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/elyse502)
-
-<br /><hr /><br />
-
-## License 📝
-
-This project is distributed under [MIT license](https://github.com/elyse502/prescripto/blob/main/LICENSE). Enjoy! 🎉
-
-<br /><br />
-
-
-
 

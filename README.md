@@ -9,8 +9,8 @@
 
 ## Credentials
 
-- **Patient:** `patient@example.com` / `Passw0rd!`
-- **Admin:** `admin@example.com` / `Passw0rd!`
+- **Doctor:** `doctor@example.com` / `doctorpassword`
+- **Admin:** `admin@example.com` / `yourpassword!`
 
 ## Run Locally
 

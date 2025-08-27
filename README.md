@@ -1,4 +1,4 @@
-# Medicap Appointment System
+# Doctor Appointment System
 
 ## Live Links
 

@@ -10,7 +10,7 @@
 ## Credentials
 
 - **Doctor:** `doctor@example.com` / `doctorpassword`
-- **Admin:** `admin@example.com` / `yourpassword!`
+- **Admin:** `admin@example.com` / `yourpassword`
 
 ## Run Locally
 
